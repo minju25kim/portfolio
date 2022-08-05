@@ -11,10 +11,10 @@ function App() {
   return (
     <>
       <Header />
-      <div className="app">
+      <div className="App">
         <Intro />
-        <About />
         <Project />
+        <About />
         <Contact />
       </div>
       <Footer />

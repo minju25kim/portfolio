@@ -3,19 +3,27 @@ import StreetCred from "./assets/StreetCred.png";
 import TrainExit from "./assets/TrainExits.png";
 import secTech from "./assets/secTech.png";
 import searchflix from "./assets/searchflix.png";
-import { SiVercel, SiNextdotjs, SiSupabase } from "react-icons/si";
+import {
+  SiNetlify,
+  SiVercel,
+  SiNextdotjs,
+  SiSupabase,
+  SiPostgresql,
+  SiTailwindcss,
+  SiReact,
+} from "react-icons/si";
 
 function Project() {
   return (
     <section id="project">
-      <h2>Projects</h2>
+      <h2>Project</h2>
       <div className="scred prj">
         <div className="card">
           <h3>StreetCred</h3>
           <div className="techStack">
-            <SiNextdotjs />
-            <SiVercel />
-            <SiSupabase />
+            <SiNextdotjs size="30"/>
+            <SiVercel size="30"/>
+            <SiSupabase size="30"/>
           </div>
         </div>
         <div className="card">
@@ -31,8 +39,16 @@ function Project() {
         </div>
       </div>
       <div className="texit prj">
-        <h3>TrainExit</h3>
-        <div>
+        <div className="card">
+          <h3>TrainExit</h3>
+          <div className="techStack">
+            <SiVercel size="30"/>
+            <SiNextdotjs size="30"/>
+            <SiPostgresql size="30"/>
+            <SiTailwindcss size="30"/>
+          </div>
+        </div>
+        <div className="card">
           <a
             href="https://github.com/fac24/finalProj-Bereket-Minju-Joe-George"
             target="_blank"
@@ -46,8 +62,16 @@ function Project() {
         </div>
       </div>
       <div className="stech prj">
-        <h3>SecTech</h3>
-        <div>
+        <div className="card">
+          <h3>SecTech</h3>
+          <div className="techStack">
+            <SiVercel size="30"/>
+            <SiNextdotjs size="30"/>
+            <SiPostgresql size="30"/>
+            <SiTailwindcss size="30"/>
+          </div>
+        </div>
+        <div className="card">
           <a
             href="https://github.com/fac24/week6-alex-george-minju-petra"
             target="_blank"
@@ -62,8 +86,15 @@ function Project() {
         </div>
       </div>
       <div className="sflix prj">
-        <h3>SearchFlix</h3>
-        <div>
+        <div className="card">
+          <h3>SearchFlix</h3>
+          <div className="techStack">
+            <SiNetlify size="30"/>
+            <img src="/vite.svg" />
+            <SiReact size="30"/>
+          </div>
+        </div>
+        <div className="card">
           <a
             href="https://github.com/fac24/week5-bereket-minju"
             target="_blank"

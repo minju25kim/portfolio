@@ -4,9 +4,6 @@ function About() {
   return (
     <section id="about">
       <h2>About me</h2>
-      <a href="https://github.com/minju25kim" target="_blank">
-        <img src="/minju-github.png" />
-      </a>
       <div className="bio">
         <p>
           {" "}

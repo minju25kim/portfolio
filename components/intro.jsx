@@ -4,9 +4,13 @@ function Intro() {
   return (
     <section id="intro">
       <h1>
-        Hello, I'm <span id="my-name">Minju Kim</span>. <br />I create and
-        develop web apps.{" "}
+        Hello, I'm{" "}
+        <a id="my-name" href="#contact">
+          Minju Kim
+        </a>
+        . <br />I create and develop web apps.{" "}
       </h1>
+      <a href="#about">Minju who?</a>
     </section>
   );
 }
