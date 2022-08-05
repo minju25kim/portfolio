@@ -10,7 +10,7 @@
   text-align: center;
 }
 /* header */
-header{
+header {
   height: 10vh;
   display: flex;
   flex-flow: column wrap;
@@ -46,24 +46,27 @@ ul {
   margin-left: 1rem;
 }
 .nav > li > a {
-  text-decoration : none;
+  text-decoration: none;
 }
-.nav > li > a, a:visited, a:hover, a:active {
+.nav > li > a,
+a:visited,
+a:hover,
+a:active {
   color: inherit;
 }
 /* intro */
-#intro{
+#intro {
   height: 90vh;
   display: flex;
   flex-flow: column wrap;
-  justify-content:center;
-  align-items:center;
+  justify-content: center;
+  align-items: center;
 }
 #intro > h1 {
   /* border: 5px solid black; */
   margin-bottom: 4rem;
 }
-#my-name{
+#my-name {
   background: linear-gradient(45deg, #ee0979, #ff6a00);
   background-clip: text;
   -webkit-background-clip: text;
@@ -73,7 +76,7 @@ ul {
   display: inline-block;
 }
 /* about */
-#about  {
+#about {
   padding: 5rem 0;
   background: linear-gradient(45deg, #ee0979, #ff6a00);
   display: flex;
@@ -82,51 +85,70 @@ ul {
   align-items: center;
   gap: 2rem;
 }
-#about  > a{
+#about > a {
   max-width: 15rem;
   min-height: 24rem;
 }
-#about  > a > img {
+#about > a > img {
   max-width: 15rem;
   min-height: 24rem;
   object-fit: cover;
 }
-#about  > .bio {
+#about > .bio {
   display: block;
-  margin :0 auto;
+  margin: 0 auto;
   padding: 0 4rem;
 }
-#about  > .bio > p {
-  margin-bottom :1rem;
+#about > .bio > p {
+  margin-bottom: 1rem;
 }
 /* project */
 #project {
   background: linear-gradient(45deg, #ec6ead, #3494e6);
   padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 #project > .prj {
-  padding: 2rem;
-  max-width: 1280px;
+  max-width:800px;
   width: 100%;
-  border: 5px solid black;
   margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
-  justify-content:center;
+  justify-content: center;
   align-items: flex-start;
   gap: 1rem;
 }
-#project > .prj > div > a   {
+#project > .prj > .card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#project > .prj > .card > .techStack {
+  align-self: flex-end;
+  display: flex;
+  gap: 1rem;
+}
+#project > .prj > .card > a {
   max-width: 40rem;
   max-height: 30rem;
   width: 20rem;
   height: 15rem;
 }
-
-#project > .prj >div > a > img{
+#project > .prj > .card > a > img {
   max-width: 40rem;
   max-height: 30rem;
   width: 20rem;
   height: 15rem;
   object-fit: cover;
+}
+#project > .prj > .techStack {
+  border: 5px solid black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
 }
