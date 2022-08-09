@@ -21,9 +21,9 @@ function Project() {
         <div className="card">
           <h3>StreetCred</h3>
           <div className="techStack">
-            <SiNextdotjs size="30"/>
-            <SiVercel size="30"/>
-            <SiSupabase size="30"/>
+            <SiNextdotjs size="30" />
+            <SiVercel size="30" />
+            <SiSupabase size="30" />
           </div>
         </div>
         <div className="card">
@@ -42,10 +42,10 @@ function Project() {
         <div className="card">
           <h3>TrainExit</h3>
           <div className="techStack">
-            <SiVercel size="30"/>
-            <SiNextdotjs size="30"/>
-            <SiPostgresql size="30"/>
-            <SiTailwindcss size="30"/>
+            <SiVercel size="30" />
+            <SiNextdotjs size="30" />
+            <SiPostgresql size="30" />
+            <SiTailwindcss size="30" />
           </div>
         </div>
         <div className="card">
@@ -65,10 +65,10 @@ function Project() {
         <div className="card">
           <h3>SecTech</h3>
           <div className="techStack">
-            <SiVercel size="30"/>
-            <SiNextdotjs size="30"/>
-            <SiPostgresql size="30"/>
-            <SiTailwindcss size="30"/>
+            <SiVercel size="30" />
+            <SiNextdotjs size="30" />
+            <SiPostgresql size="30" />
+            <SiTailwindcss size="30" />
           </div>
         </div>
         <div className="card">
@@ -89,9 +89,9 @@ function Project() {
         <div className="card">
           <h3>SearchFlix</h3>
           <div className="techStack">
-            <SiNetlify size="30"/>
+            <SiNetlify size="30" />
             <img src="/vite.svg" />
-            <SiReact size="30"/>
+            <SiReact size="30" />
           </div>
         </div>
         <div className="card">
