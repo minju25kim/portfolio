@@ -8,10 +8,11 @@ function Intro() {
         <a id="minju-kim" href="#contact">
           Minju Kim
         </a>
-        . <br />I create and develop{" "}
+        . <br />I create and develop <br />
         <a id="web-apps" href="#project">
-          web apps.
+          web apps
         </a>
+        .
       </h1>
       <a href="#about" className="minju-who">
         <BsArrowBarDown size="30" />

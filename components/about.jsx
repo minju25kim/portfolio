@@ -6,18 +6,22 @@ function About() {
       <h2>About me</h2>
       <div className="bio">
         <p>
-          {" "}
-          I'm a developer who loves to make creative web apps with modern web
-          technology. <br />
-          Coding to solve problems and also for better communications within
-          people.{" "}
+          Since I found my engineering study is not what I want to dedicate for
+          10 years in my future. I tried to learn many other things. And I found
+          freecodecamp and started to learn basic HTML CSS and Javascript.
+          First, I thought it's totally cool things to do with laptop. I dreamed
+          to do coding as my job and decided to learn more seriously.
         </p>
         <p>
-          Plus, designed user jouney for better approach to user's experience in
-          web apps.
-          <br />
-          Using design tools to create app prototypes and testing.
+          While I'm deciding, I lost my first official job in Malaysia and
+          decided to come to UK for more exciting adventures. And I found London
+          has a lot of opportunities for learners and also people who is seeking
+          for a job. I was searching for coding study group for working with
+          other like minded people and google search result showed me Founders
+          and Coders based in London.
         </p>
+        <p></p>
+        <p></p>
       </div>
     </section>
   );

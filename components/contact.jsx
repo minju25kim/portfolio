@@ -18,13 +18,14 @@ function Contact() {
   return (
     <section id="contact">
       <h2>Contact</h2>
-      <div>
+      <div className="email">
         Send email to{" "}
         <a target="_blank" href="mailto:minju25kim@gmail.com">
           minju25kim@gmail.com
         </a>
-        {copied ? <span>Copied!</span> : null}
-        {copied ? null : (
+        {copied ? (
+          <span>Copied!</span>
+        ) : (
           <HiOutlineClipboardCopy size="30" onClick={handleCopy} />
         )}
       </div>
@@ -32,7 +33,7 @@ function Contact() {
         <a href="https://github.com/minju25kim" target="_blank">
           <FaGithub size="50" />
         </a>
-        <a href="https://www.linkedin.com/in/minju-kim-minju/" target="_blank">
+        <a href="https://www.linkedin.com/in/minju25kim/" target="_blank">
           <FaLinkedin size="50" />
         </a>
         <a href="/minju_kim_cv.pdf" target="_blank">

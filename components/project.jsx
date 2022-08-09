@@ -30,12 +30,30 @@ function Project() {
           <a href="https://github.com/fac24/StreetCred" target="_blank">
             <img src={StreetCred} />
           </a>
-          <p>
-            Street cred is tech for better(TFB) project.
-            <br />
-            StreetCred encourage people to make local community and sharing
-            things within communities.
-          </p>
+          <div className="description">
+            <p>
+              Street cred is{" "}
+              <a
+                href="https://www.foundersandcoders.com/tech-for-better/"
+                target="_blank"
+              >
+                tech for better(TFB)
+              </a>{" "}
+              project. StreetCred encourage people to make local community and
+              share things within the communities for their street cred.
+            </p>
+            <p>
+              Users can access their accounts with social auth signup/signin and
+              create their own communities or join other communities for their
+              hobbies or locations. For borrowing or lending things, user can
+              chat each other.
+            </p>
+            <p>
+              This project is deployed by Vercel and built on Nextjs. Supabase
+              is used for database management. Playwright test library is used
+              for testing social login features.
+            </p>
+          </div>
         </div>
       </div>
       <div className="texit prj">
@@ -55,10 +73,12 @@ function Project() {
           >
             <img src={TrainExit} />
           </a>
-          <p>
-            Train exit is the app that can help user to find where to take off
-            from london tube.{" "}
-          </p>
+          <div className="description">
+            <p>
+              Train exit is the app that can help user to find where to take off
+              from london tube.{" "}
+            </p>
+          </div>
         </div>
       </div>
       <div className="stech prj">
@@ -78,11 +98,13 @@ function Project() {
           >
             <img src={secTech} />
           </a>
-          <p>
-            Sectech is the plaform for second hand electronics like laptop or
-            smartphones. Sectech helps user not to buy new electronics but get
-            second hand item.
-          </p>
+          <div className="description">
+            <p>
+              Sectech is the plaform for second hand electronics like laptop or
+              smartphones. Sectech helps user not to buy new electronics but get
+              second hand item.
+            </p>
+          </div>
         </div>
       </div>
       <div className="sflix prj">
@@ -101,11 +123,13 @@ function Project() {
           >
             <img src={searchflix} />
           </a>
-          <p>
-            Search flix is the project using TMDB API for looking for movies and
-            TV shows. This app help user to create movie menu so they can pick
-            one in the menu like real menu in restaurants.
-          </p>
+          <div className="description">
+            <p>
+              Search flix is the project using TMDB API for looking for movies
+              and TV shows. This app help user to create movie menu so they can
+              pick one in the menu like real menu in restaurants.
+            </p>
+          </div>
         </div>
       </div>
     </section>
