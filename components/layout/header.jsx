@@ -3,7 +3,7 @@ import { FcDocument } from "react-icons/fc";
 
 function Header() {
   return (
-    <header>
+    <header className="header">
       <a href="#" className="logo">
         <img src="/minju-kim.svg" alt="Minju Kim logo" />
       </a>

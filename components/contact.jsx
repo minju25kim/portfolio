@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { HiOutlineClipboardCopy } from "react-icons/hi";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
-import cv from "./assets/cv.svg";
+import cv from "../src/assets/cv.svg";
 
 function Contact() {
   const [copied, setCopied] = useState(false);

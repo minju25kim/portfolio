@@ -8,6 +8,10 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  --vicecity-pink: #ec6ead;
+  --vicecity-blue: #3494e6;
+  --sunset-red: #ee0979;
+  --sunset-orange: #ff6a00;
 }
 a {
   text-decoration: none;
@@ -31,7 +35,7 @@ h3 {
   font-size: 2rem;
 }
 /* header */
-header {
+.header {
   position: absolute;
   padding: 2rem 6rem;
   display: flex;
@@ -65,7 +69,11 @@ header {
   align-items: center;
 }
 .navPrj {
-  background: linear-gradient(45deg, #ec6ead, #3494e6);
+  background: linear-gradient(
+    45deg,
+    var(--vicecity-pink),
+    var(--vicecity-blue)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -78,7 +86,7 @@ header {
   margin-left: 1rem;
 }
 .navCon {
-  background: linear-gradient(45deg, #ee0979, #ff6a00);
+  background: linear-gradient(45deg, var(--sunset-red), var(--sunset-orange));
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -94,12 +102,19 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 #intro > h1 {
   text-align: left;
   margin: 0 1rem;
 }
+@media (max-width: 700px) {
+  #intro > h1 {
+    text-align: center;
+    margin: 0 1rem;
+  }
+}
 #minju-kim {
-  background: linear-gradient(45deg, #ee0979, #ff6a00);
+  background: linear-gradient(45deg, var(--sunset-red), var(--sunset-orange));
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -108,7 +123,11 @@ header {
   display: inline-block;
 }
 #web-apps {
-  background: linear-gradient(45deg, #ec6ead, #3494e6);
+  background: linear-gradient(
+    45deg,
+    var(--vicecity-pink),
+    var(--vicecity-blue)
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -123,11 +142,15 @@ header {
 }
 /* project */
 #project {
-  background: linear-gradient(45deg, #ec6ead, #3494e6);
+  background: linear-gradient(
+    45deg,
+    var(--vicecity-pink),
+    var(--vicecity-blue)
+  );
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 }
 #project > .prj {
   max-width: 50rem;
@@ -165,17 +188,98 @@ header {
   height: 20rem;
   object-fit: cover;
 }
-#project > .prj > .card > .description {
+#project > .prj > .card > .panel {
   display: flex;
-  flex-flow: column wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
   gap: 1rem;
 }
-#project > .prj > .card > .description > p {
+#project > .prj > .card > .panel > .description {
   text-align: justify;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
+}
+#project > .prj > .card > .panel > .links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+#project > .prj > .card > .panel > .links > a {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  line-height: 2rem;
+  cursor: pointer;
+}
+/* project mobile */
+@media (max-width: 900px) {
+  #project {
+    background: linear-gradient(
+      45deg,
+      var(--vicecity-pink),
+      var(--vicecity-blue)
+    );
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  #project > .prj {
+    max-width: 50rem;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  #project > .prj > .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #project > .prj > .card > .techStack {
+    display: flex;
+    gap: 1rem;
+  }
+  /* prjoect img link */
+  #project > .prj > .card > a {
+    max-width: 30rem;
+    max-height: 25rem;
+    width: 20rem;
+    height: 15rem;
+  }
+  #project > .prj > .card > a > img {
+    max-width: 30rem;
+    max-height: 25rem;
+    width: 20rem;
+    height: 15rem;
+    object-fit: cover;
+  }
+  #project > .prj > .card > .panel > .description {
+    max-width: 30rem;
+    max-height: 25rem;
+    width: 20rem;
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  #project > .prj > .card > .panel > .links {
+    display: flex;
+    gap: 2rem;
+  }
+  #project > .prj > .card > .panel > .links > a {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    cursor: pointer;
+  }
 }
 /* about */
 #about {
@@ -194,6 +298,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   gap: 1rem;
+  padding: 1rem;
 }
 #about > .bio > p {
   text-align: justify;
@@ -203,7 +308,7 @@ header {
 /* contact */
 #contact {
   height: 70vh;
-  background: linear-gradient(45deg, #ee0979, #ff6a00);
+  background: linear-gradient(45deg, var(--sunset-red), var(--sunset-orange));
   display: flex;
   flex-direction: column;
   justify-content: center;

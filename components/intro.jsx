@@ -14,6 +14,7 @@ function Intro() {
         </a>
         .
       </h1>
+
       <a href="#about" className="minju-who">
         <BsArrowBarDown size="30" />
         <br />
