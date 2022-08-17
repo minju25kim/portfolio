@@ -2,7 +2,6 @@ import TechLogo from "./TechLogo";
 import { SiGithub } from "react-icons/si";
 
 function Prj({ prj }) {
-  const img = prj.img;
   return (
     <div className="prj">
       <div className="card">
@@ -15,7 +14,7 @@ function Prj({ prj }) {
       </div>
       <div className="card">
         <a href={prj.github} target="_blank">
-          <img src={img} />
+          <img src={prj.img} />
         </a>
         <div className="panel">
           <div className="description">{prj.description}</div>
