@@ -161,6 +161,10 @@ h3 {
   justify-content: center;
   align-items: flex-start;
   gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 2rem;
 }
 #project > .prj > .card {
   width: 100%;
@@ -187,6 +191,7 @@ h3 {
   width: 25rem;
   height: 20rem;
   object-fit: cover;
+  border-radius: 1rem;
 }
 #project > .prj > .card > .panel {
   display: flex;
@@ -225,7 +230,7 @@ h3 {
     gap: 4rem;
   }
   #project > .prj {
-    max-width: 50rem;
+    max-width: 35rem;
     width: 100%;
     margin: 0 auto;
     display: flex;
